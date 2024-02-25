@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <head>
-    <title>Sedecworlde Helper</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/js/home.js"></script>
+    <title>Sedecwordle Helper</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <!--<script src="/js/home.js"></script>-->
     <link rel="icon" type="image/x-icon" href="/src/img/favicon.png">
 </head>
 <body>
-    <div class="App Container">
-        <div class="Main Word">
-
-
+    <!-- Header bar -->
+    <div class="Header-Bar">
+            <p><a href="https://sedecordlegame.org/">Sedecordle Helper</a></p> 
+    </div>
+    
+    <div class="App-Container">
+        <!-- Contains the word itself -->
+        <div class="Word-Box">
+            <div class="Letter-Box"><input type="text" class="Letter-Input" maxlength="1"></div>
+            <div class="Letter-Box"><input type="text" class="Letter-Input" maxlength="1"></div>
+            <div class="Letter-Box"><input type="text" class="Letter-Input" maxlength="1"></div>
+            <div class="Letter-Box"><input type="text" class="Letter-Input" maxlength="1"></div>
+            <div class="Letter-Box"><input type="text" class="Letter-Input" maxlength="1"></div>
         </div>
 
-
-        <div class="Spares Box">
-
-
+        <!-- Spare letters for Viewing & Brainstorming -->
+        <div class="Spares-Box">
+            <div class="Spares">
+                <input type="Text" class="Spares-Text" maxlength="11">    
+            </div>
         </div>
 
-        <div class="Clear Button">
-
-
+        <!-- Clear button for all letters -->
+        <div class="Spares-Box">
+            <input type="Button" value="CLEAR" class="Clear">
         </div>
     </div>
 </body>

@@ -1,0 +1,155 @@
+@font-face{
+    font-family:"Montserrat-Bold";
+    src: url("./fonts/Montserrat-Bold.ttf") format('truetype');
+}
+@font-face{
+    font-family:"Montserrat-Ultra-Bold";
+    src: url("./fonts/Montserrat-ExtraBold.ttf") format('truetype');
+}
+
+
+:root{
+    --offWhite:#edeff4;
+    --grey:#dbdfeb;
+    --darkest:#a4aec4;
+    --font: "Montserrat-Bold";
+    --fontBold: "Montserrat-Ultra-Bold";
+    
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /* justify-content: space-between; */
+    gap: 15%;
+}
+
+.Header-Bar{
+    background-color: #dbdfeb;
+    height: 8% !important;
+    width: 100% !important;
+    display:flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+p{
+    font-size:24px;
+    font-family:var(--font);
+    color:var(--darkest)
+}
+
+
+.App-Container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    align-content: center;
+    align-items: center;
+}
+
+.Word-Box{
+    display:flex;
+    justify-content: space-around;
+    width: 30%;
+    flex-direction: row;
+}
+
+.Letter-Box{
+    display:flex;
+    color:var(--offWhite);
+    background-color: var(--offWhite);
+    /* border: solid 3px #a4aec4; */
+    border-radius: 20px;
+    height:100px;
+    width:100px;
+    margin: 2px;
+    justify-content: center;
+}
+
+
+.Letter-Input{
+    display:flex;
+    width:inherit;
+    height:inherit;
+    border:inherit;
+    background-color:inherit;
+    border-radius:inherit;
+    font-size: 74px;
+    font-family:var(--fontBold);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--darkest);
+}
+
+.Spares-Box{
+    display:flex;
+    width: 30%;
+    height: 80px;
+    /* background-color:var(--offWhite); */
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    /* margin-bottom: 0.5%; */
+}
+
+.Spares{
+    display:flex;
+    width: 100%;
+    background-color: var(--offWhite);
+    border-radius: 20px;
+}
+
+.Spares-Text{
+    width:100%;
+    height:100%;
+    background-color:inherit;
+    color: var(--darkest);
+    font-size:60px;
+    font-family:var(--font);
+    border: inherit;
+    border-radius: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:10px;
+}
+
+h1{
+    color:var(--darkest);
+    
+}
+
+.Clear{
+    border:none;
+    background-color:var(--offWhite);
+    color:var(--darkest);
+    /* size:60px; */
+    width: 100%;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: var(--font);
+}
+
+.Clear:hover{
+    background-color:var(--darkest);
+    color:var(--offWhite);
+}
