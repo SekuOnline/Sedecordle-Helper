@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     const items = document.getElementsByClassName("Letter-Input");
+    console.log("Entering letter-input event listener assigning");
     for (let i = 0; i < items.length; i++){
+        console.log("i= "+i);
         items[i].addEventListener('keyup', function(){
             if(parseInt(this.id) < 6){
                 document.getElementById((parseInt(this.id)+1).toString()).focus();
