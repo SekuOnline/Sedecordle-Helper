@@ -17,6 +17,10 @@
     
 }
 
+input{
+    outline:none;
+}
+
 a{
     text-decoration:none;
     color:inherit;
@@ -99,6 +103,18 @@ p{
     text-align: center;
     text-transform: uppercase;
     color: var(--darkest);
+}
+
+.Letter-Input:hover:{
+    background-color:var(--grey);
+    color:#ffffff;
+    
+}
+
+.Letter-Input:focus{
+    background-color:var(--grey);
+    color:var(--darkest);
+    
 }
 
 .Spares-Box{
