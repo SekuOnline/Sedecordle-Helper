@@ -46,6 +46,10 @@ document.addEventListener("DOMContentLoaded", function(){
         items[i].addEventListener('keyup', function(){
             if(parseInt(this.id) < 6){
                 document.getElementById((parseInt(this.id)+1).toString()).focus();
+                console.log("Moving down the line - debugging");
+            }
+            else{
+                console.log("Wrong element - didn't move down");
             }
         })
     }
