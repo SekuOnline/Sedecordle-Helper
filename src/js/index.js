@@ -23,3 +23,22 @@ document.addEventListener("keydown", function(event){
             break;
     }
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+    const clearButton = document.getElementById("Clear");
+    if(clearButton){
+        console.log("Clear button found");
+        clearButton.addEventListener('click', clearClick);
+    }
+    else{
+        console.log(" Clear button not found");
+    }
+})
+
+function clearClick(){
+    console.log("clearing");
+    
+    for(let id = 1; id < 7; id++){
+        document.getElementById(id.toString()).value = '';
+    }
+}

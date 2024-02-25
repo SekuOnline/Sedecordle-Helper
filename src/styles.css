@@ -105,7 +105,7 @@ p{
     color: var(--darkest);
 }
 
-.Letter-Input:hover:{
+.Letter-Input:hover{
     background-color:var(--grey);
     color:#ffffff;
     
