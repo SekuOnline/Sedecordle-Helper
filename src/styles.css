@@ -103,12 +103,13 @@ p{
     text-align: center;
     text-transform: uppercase;
     color: var(--darkest);
+    user-select: none;
+    caret-color: transparent;
 }
 
 .Letter-Input:hover{
     background-color:var(--grey);
     color:#ffffff;
-    
 }
 
 .Letter-Input:focus{
@@ -147,6 +148,12 @@ p{
     text-align: center;
     text-transform: uppercase;
     letter-spacing:10px;
+    
+}
+
+.Spares-Text:focus{
+    color:var(--darkest);
+    background-color: var(--offWhite);
 }
 
 h1{
@@ -166,6 +173,11 @@ h1{
 }
 
 .Clear:hover{
+    background-color:var(--darkest);
+    color:var(--offWhite);
+}
+
+.Clear:focus{
     background-color:var(--darkest);
     color:var(--offWhite);
 }
