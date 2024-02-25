@@ -1,24 +1,31 @@
 document.addEventListener("keydown", function(event){
     let id;
+    let idArray = ['1', '2', '3', '4', '5', '6']
+    console.log("Checking for event keys: " + event.key);
     switch(event.key){
-        case '37':          //Left Arrow Key
+        case 'ArrowLeft':          //Left Arrow Key
             id = document.activeElement.id;
-            if (id in ['2', '3', '4', '5']){
+            if (idArray.includes(id)){
                 id = (parseInt(id)-1).toString();
-                document.getElementById(id).focus;
+                console.log("Moving left:");
+                document.getElementById(id).focus();
             }
             break;
-        case '38':          //Up Arrow Key
-            document.getElementById('1').focus;
+        case 'ArrowUp':          //Up Arrow Key
+            console.log("Moving up:" + id);
+            document.getElementById('1').focus();
             break;
-        case '39':          //Right Arrow Key
-        id = document.activeElement.id;
-        if (id in ['1', '2', '3', '4']){
-            id = (parseInt(id)+1).toString();
-            document.getElementById(id).focus;
-        }
-            break;
-        case '40':          //Down Arrow Key
+        case 'ArrowRight':          //Right Arrow Key
+            id = document.activeElement.id;
+            console.log(id);
+            if (idArray.includes(id)){
+                id = (parseInt(id)+1).toString();
+                console.log("Moving right:");
+                document.getElementById(id).focus();
+            }
+                break;
+        case 'ArrowDown':          //Down Arrow Key
+            console.log("Moving down:");
             document.getElementById('6').focus();
             break;
     }
@@ -32,6 +39,15 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     else{
         console.log(" Clear button not found");
+    }
+
+    const items = document.getElementsByClassName("Letter-Input");
+    for (let i = 0; i < items.length; i++){
+        items[i].addEventListener('keyup', function(){
+            if(parseInt(this.id) < 6){
+                document.getElementById((parseInt(this.id)+1).toString()).focus();
+            }
+        })
     }
 })
 
